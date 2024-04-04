@@ -9,7 +9,7 @@ def call() {
     ansiblePlaybook(
         credentialsId: '26c1d4a1-4584-469b-a8af-8f5d84ef3842',
         inventory: '/home/sanchit/ansible3/hosts',
-        playbook: 'home/sanchit/ansible3/redis.yml'
+        playbook: '/home/sanchit/ansible3/redis.yml'
     )
 
     // Notification
