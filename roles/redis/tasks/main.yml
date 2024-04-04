@@ -1,0 +1,14 @@
+---
+    - name: Install Redis
+      package:
+        name: redis
+        state: present
+      tags: install
+
+    - name: Copy Redis config file
+      template:
+        src: templates/redis.conf.j2
+        dest: "{{ redis_config_file }}"
+      notify: restart redis
+      tags: configure
+

@@ -1,0 +1,18 @@
+# {{ ansible_managed }}
+{% if redis_bind_address is defined %}
+bind {{ redis_bind_address }}
+{% endif %}
+
+{% if redis_port is defined %}
+port {{ redis_port }}
+{% endif %}
+
+{% if redis_password is defined %}
+requirepass {{ redis_password }}
+{% endif %}
+
+{% if redis_slaves is defined %}
+{% for slave in redis_slaves %}
+replicaof {{ slave.master_ip }} {{ slave.master_port }}
+{% endfor %}
+{% endif %}

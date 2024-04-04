@@ -1,0 +1,11 @@
+---
+redis_version: "6.2.5"
+redis_bind_address: "127.0.0.1"
+redis_port: "6379"
+redis_password: "your_redis_password"
+redis_slaves:
+  - master_ip: "3.111.36.56"
+    master_port: "6379"
+  - master_ip: "65.0.61.7"
+    master_port: "6379"
+redis_extra_config: true
