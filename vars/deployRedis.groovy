@@ -1,6 +1,6 @@
 def call() {
     // Clone the repository
-    git url: 'https://github.com/Sanchit2323/Test123.git'
+    git branch: 'main', url: 'https://github.com/Sanchit2323/Test123.git'
 
     // User Approval
     input message: 'Approve the deployment?', submitter: 'admin,sanchit'
