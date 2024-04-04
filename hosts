@@ -1,2 +1,2 @@
-Debian ansible_host=3.111.36.56 ansible_user=ubuntu ansible_ssh_private_key_file=/home/sanchit/Sanchit3.pem
-Redhat ansible_host=65.0.61.7 ansible_user=ec2-user ansible_ssh_private_key_file=/home/sanchit/Sanchit3.pem
+Debian ansible_host=65.0.87.90 ansible_user=ubuntu ansible_ssh_private_key_file=/home/sanchit/Sanchit3.pem
+Redhat ansible_host=3.109.108.39 ansible_user=ec2-user ansible_ssh_private_key_file=/home/sanchit/Sanchit3.pem
